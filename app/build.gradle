@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        applicationId "com.leku.wsj"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 2
+        versionName "1.1.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    /**
+     * android5.0技术支持
+     */
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:support-v4:24.0.0'
+    compile 'com.android.support:support-v13:24.0.0'
+    compile 'com.android.support:cardview-v7:24.0.0'
+    compile 'com.android.support:recyclerview-v7:24.0.0'
+    compile 'com.android.support:design:24.0.0'
+
+    /**
+     * Retrofit
+     */
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+
+    /**
+     * Rx-
+     */
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+
+    /**
+     * 工具类
+     */
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile 'jp.wasabeef:recyclerview-animators:2.2.3'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'org.kymjs.kjframe:kjframe:2.6'
+    compile 'org.xutils:xutils:3.3.36'
+    //compile 'com.thoughtworks.xstream:xstream:1.4.8'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.zhy:okhttputils:2.5.2'
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+}

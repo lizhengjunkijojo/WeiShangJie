@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="font_size">
+        <item>特大号字</item>
+        <item>大号字</item>
+        <item>中号字</item>
+        <item>小号字</item>
+    </string-array>
+
+    <string-array name="news_viewpage_arrays">
+        <item>热点资讯</item>
+        <item>视频推荐</item>
+        <item>服务信息</item>
+    </string-array>
+</resources>

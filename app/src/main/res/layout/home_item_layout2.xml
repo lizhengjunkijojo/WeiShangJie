@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/space_10"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="@dimen/space_10">
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_margin="6dp"
+        android:contentDescription="@string/video_image"/>
+
+    <TextView
+        android:id="@+id/item_tv_name"
+        android:textSize="16sp"
+        android:maxLines="2"
+        android:layout_alignTop="@id/item_img"
+        android:layout_toRightOf="@id/item_img"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_img"
+        android:layout_toRightOf="@id/item_img"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="咨询"
+            android:background="@android:color/transparent" />
+        <TextView
+            android:id="@+id/item_tv"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:textColor="#999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

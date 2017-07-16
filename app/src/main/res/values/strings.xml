@@ -1,0 +1,64 @@
+<resources>
+
+    <string name="app_name">微商界</string>
+
+    <string name="actionbar_title_detail">详情</string>
+    <string name="actionbar_title_news">信息详情</string>
+    <string name="actionbar_title_about">关于我们</string>
+    <string name="actionbar_title_feedback">意见反馈</string>
+    <string name="actionbar_title_setting">设置</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="down_state">正在下载：%s</string>
+
+    <string name="action_settings">设置</string>
+    <string name="tab_image">tab_image</string>
+    <string name="title_video">视频直播</string>
+    <string name="video_image">视频截图</string>
+    <string name="finish_play">back</string>
+    <string name="switch_danmu">弹幕</string>
+
+    <string name="title_elementary">基本</string>
+    <string name="title_map">转换(map)</string>
+    <string name="title_zip">压合(zip)</string>
+    <string name="title_token">Token(flatMap)</string>
+    <string name="title_token_advanced">Token_高级(retryWhen)</string>
+    <string name="title_cache">缓存(BehaviorSubject)</string>
+    <string name="question_mark">\?</string>
+    <string name="load">加载</string>
+    <string name="loading_failed">数据加载失败</string>
+    <string name="dialog_elementary">RxJava 和 Retrofit 结合使用最基本的格式：用 subscribeOn() 和 observeOn() 来控制线程，并通过 subscribe() 来触发网络请求的开始。代码大致形式：\n\napi.getData()\n&#160;&#160;&#160;&#160;.subscribeOn(Schedulers.io())\n&#160;&#160;&#160;&#160;.observeOn(AndroidSchedulers.mainThread())\n&#160;&#160;&#160;&#160;.subscribe(observer);</string>
+    <string name="api_source_zhuangbi">* 本页 Sample 使用的 API 来自 <b>装逼大全</b> zhuangbi.info</string>
+
+    <string name="footer_type_loading">正在加载中…</string>
+    <string name="footer_type_error">加载失败</string>
+    <string name="footer_type_net_error">网络错误</string>
+    <string name="footer_type_not_more">没有更多数据</string>
+
+    <string name="error_view_click_to_refresh">点击屏幕,重新加载</string>
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="error_view_loading">加载中…</string>
+    <string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="tip_network_error">没有可用的网络</string>
+
+    <string name="about_content_1">\t\t微商界 1、第一手微商咨询，揭秘微商本质。2、当下微商产品评价点评，微商代理产品甄选排名。3、提问微商相关问题，微商高手免费指导，手把手教您做微商。4、代理产品免费发布，为产品找寻微商销售渠道。</string>
+    <string name="about_content_2">\t\t微商界 1、第一手微商咨询，揭秘微商本质。2、当下微商产品评价点评，微商代理产品甄选排名。3、提问微商相关问题，微商高手免费指导，手把手教您做微商。4、代理产品免费发布，为产品找寻微商销售渠道。</string>
+
+    <string name="about_phone_1">客服电话</string>
+    <string name="about_phone_1_hint">是否拨打13552756390客服电话?</string>
+    <string name="about_phone_2">技术支持</string>
+    <string name="about_phone_2_hint">是否拨打13552756390技术支持电话?</string>
+
+    <string name="about_guanwang">官网：</string>
+    <string name="about_url">http://www.wsj.com</string>
+    <string name="about_copyright">© 2017 微商界</string>
+
+    <string name="str_feedback_submit">提交</string>
+    <string name="str_feedback_et_hint">请提出您宝贵的建议</string>
+
+    <string name="tip_double_click_exit">再次点击退出微商界</string>
+
+</resources>

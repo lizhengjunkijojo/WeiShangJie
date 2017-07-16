@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lzj.vtm.demo.widget.CustomerScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <View
+            style="@style/h_line"
+            android:layout_marginTop="20dip" />
+
+        <RelativeLayout
+            android:id="@+id/rl_about"
+            style="@style/option_item_rl" >
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="检查更新"
+                android:textColor="#333333"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_versionCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                tools:text="2.4.1"
+                android:textColor="#999999"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/h_line"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_loading_img"
+            style="@style/option_item_rl" >
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="加载图片"
+                android:textColor="#333333"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/h_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_double_click_exit"
+            style="@style/option_item_rl" >
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="双击退出"
+                android:textColor="#333333"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+
+        <View
+            style="@style/h_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_clean_cache"
+            style="@style/option_item_rl" >
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="清空缓存"
+                android:textColor="#333333"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_cache_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                tools:text="13M"
+                android:textColor="#999999"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <View
+            style="@style/h_line"
+            android:layout_marginTop="20dip"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_exit"
+            style="@style/option_item_rl" >
+
+            <TextView
+                android:id="@+id/setting_logout"
+                style="@style/option_item_text_parent"
+                android:text="退出"
+                android:textColor="#333333"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <View
+            style="@style/h_line" />
+
+    </LinearLayout>
+
+</com.lzj.vtm.demo.widget.CustomerScrollView>
