@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <TextView
+        android:id="@+id/item_tv_name"
+        android:textSize="16sp"
+        android:text="测试"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.5"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:background="@android:color/transparent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="5dp"
+        android:background="#e7e7e7"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/space_10"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/icon_my_team"
+                android:contentDescription="@null" />
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:textColor="#333333"
+                android:text="复制" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/icon_my_message"
+                android:contentDescription="@null" />
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:textColor="#333333"
+                android:text="分享" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <View
+        style="@style/h_line" />
+
+</LinearLayout>
