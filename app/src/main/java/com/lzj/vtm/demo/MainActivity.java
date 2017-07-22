@@ -1,6 +1,5 @@
 package com.lzj.vtm.demo;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
@@ -25,11 +24,10 @@ import com.lzj.vtm.demo.banner.Banner;
 import com.lzj.vtm.demo.base.SimpleBackPage;
 import com.lzj.vtm.demo.base.UIHelper;
 import com.lzj.vtm.demo.download.UpdateManager;
-import com.lzj.vtm.demo.home.NewsViewPagerFragment;
-import com.lzj.vtm.demo.home.Home2Fragment;
-import com.lzj.vtm.demo.setting.AboutFragment;
-import com.lzj.vtm.demo.setting.FeedBackFragment;
-import com.lzj.vtm.demo.setting.SettingsFragment;
+import com.lzj.vtm.demo.home.ExploreFragment;
+import com.lzj.vtm.demo.home.MyInfoFragment;
+import com.lzj.vtm.demo.home.NewsVPFragment;
+import com.lzj.vtm.demo.home.news.Home2Fragment;
 import com.lzj.vtm.demo.widget.DoubleClickExitHelper;
 
 /**
@@ -139,9 +137,9 @@ public class MainActivity extends AppCompatActivity
     private final String mTabSpec[] = {"head","heart","user"};
     private final String mIndicator[] = {"首页", "喜欢", "我的"};
     private final Class mFragmentsClass[] = {
-            NewsViewPagerFragment.class,
-            FeedBackFragment.class,
-            SettingsFragment.class};
+            NewsVPFragment.class,
+            ExploreFragment.class,
+            MyInfoFragment.class};
     private final int mTabImage[] = {
             R.drawable.tab_home_item,
             R.drawable.tab_heart_item,

@@ -24,7 +24,7 @@ import com.lzj.vtm.demo.details.NewsDetailFragment;
 import com.lzj.vtm.demo.download.DownloadService;
 import com.lzj.vtm.demo.download.ICallbackResult;
 import com.lzj.vtm.demo.fun.recycleswpie.swipe.SwipeActivity;
-import com.lzj.vtm.demo.home.model.News;
+import com.lzj.vtm.demo.home.news.model.News;
 import com.lzj.vtm.demo.utils.TDevice;
 import com.lzj.vtm.demo.utils.URLsUtils;
 

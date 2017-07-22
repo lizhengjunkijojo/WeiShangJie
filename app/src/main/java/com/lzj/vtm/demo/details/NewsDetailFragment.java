@@ -22,14 +22,12 @@ import com.lzj.vtm.demo.R;
 import com.lzj.vtm.demo.base.BaseFragment;
 import com.lzj.vtm.demo.cache.CacheManager;
 import com.lzj.vtm.demo.empty.EmptyLayout;
-import com.lzj.vtm.demo.home.model.News;
+import com.lzj.vtm.demo.home.news.model.News;
 import com.lzj.vtm.demo.utils.DialogHelp;
 import com.lzj.vtm.demo.utils.FontSizeUtils;
 import com.lzj.vtm.demo.utils.HTMLUtil;
 import com.lzj.vtm.demo.utils.TDevice;
 import com.lzj.vtm.demo.base.UIHelper;
-
-import org.w3c.dom.Text;
 
 import java.io.Serializable;
 import java.lang.ref.WeakReference;

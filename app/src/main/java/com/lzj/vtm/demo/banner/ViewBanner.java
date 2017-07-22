@@ -9,7 +9,7 @@ import android.widget.RelativeLayout;
 import com.bumptech.glide.RequestManager;
 import com.lzj.vtm.demo.R;
 import com.lzj.vtm.demo.base.UIHelper;
-import com.lzj.vtm.demo.home.model.News;
+import com.lzj.vtm.demo.home.news.model.News;
 
 /**
  * ViewBanner控件

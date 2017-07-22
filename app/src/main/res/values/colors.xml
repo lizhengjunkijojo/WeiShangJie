@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#2CA9E2</color>
+    <color name="colorPrimaryDark">#4EABE8</color>
     <color name="colorAccent">#FF4081</color>
 
     <color name="swiperefresh_color1">#ff00ddff</color>
@@ -26,4 +26,8 @@
     <color name="grayslate">#708090</color>
     <color name="lightblue">#0083FF</color>
 
+    <color name="day_layout_bg_normal">#f6f6f6</color>
+    <color name="day_layout_bg_pressed">#dfdfdf</color>
+
+    <color name="my_information_option_pressed">#18be40</color>
 </resources>

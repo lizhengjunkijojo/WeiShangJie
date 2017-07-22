@@ -26,7 +26,7 @@ public class RetrofitImp {
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
                     .client(okHttpClient)
-                    .baseUrl("http://123.56.221.86:8099/")
+                    .baseUrl("http://47.94.108.82:8099/")
                     .addConverterFactory(gsonConverterFactory)
                     .addCallAdapterFactory(rxJavaCallAdapterFactory)
                     .build();

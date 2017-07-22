@@ -1,10 +1,8 @@
 package com.lzj.vtm.demo.download;
 
-import com.lzj.vtm.demo.home.model.News;
-import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.lzj.vtm.demo.home.news.model.News;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 
 /**
  * 更新实体类

@@ -1,7 +1,8 @@
 package com.lzj.vtm.demo.api;
 
 import com.lzj.vtm.demo.download.Update;
-import com.lzj.vtm.demo.home.model.RetBaseNews;
+import com.lzj.vtm.demo.home.episode.model.RetBaseEpisode;
+import com.lzj.vtm.demo.home.news.model.RetBaseNews;
 import com.lzj.vtm.demo.banner.RetBaseBanner;
 
 import retrofit2.http.GET;
@@ -17,6 +18,8 @@ public interface WsjApi {
      * http://123.56.221.86:8099/api/kxnrByPage    列表页面
      * http://123.56.221.86:8099/api/bannerByPage  轮播图页面
      * http://123.56.221.86:8099/api/latestAppInfo  更新下载
+     * http://123.56.221.86:8099/api/startImage  开机大图
+     * http://123.56.221.86:8099/api/startImage  段子
      *
      * 测试地址:
      * 47.94.108.82:8099
@@ -32,4 +35,7 @@ public interface WsjApi {
 
     @GET("api/startImage?")
     Observable<RetBaseBanner> getStartImage();
+
+    @GET("api/jokeByPage?")
+    Observable<RetBaseEpisode> getEpisode(@Query("pageNo") int pageNo, @Query("pageSize") int pageSize);
 }

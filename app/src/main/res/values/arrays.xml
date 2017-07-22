@@ -9,8 +9,8 @@
     </string-array>
 
     <string-array name="news_viewpage_arrays">
-        <item>热点资讯</item>
-        <item>视频推荐</item>
-        <item>服务信息</item>
+        <item>文章</item>
+        <item>视频</item>
+        <item>段子</item>
     </string-array>
 </resources>

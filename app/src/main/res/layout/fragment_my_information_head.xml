@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/user_center_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_user_container"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/rl_user_center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true" >
+
+            <com.lzj.vtm.demo.widget.AvatarView
+                android:id="@+id/iv_avatar"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@null"
+                android:src="@drawable/widget_dface"
+                app:border_color="@color/white"
+                app:border_width="2dip" />
+
+            <ImageView
+                android:id="@+id/iv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_alignBottom="@+id/iv_avatar"
+                android:layout_alignRight="@+id/iv_avatar"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_gender"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_qr_code"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/space_10"
+                android:clickable="true"
+                android:src="@drawable/icon_qr_code"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/info_center_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@null"></View>
+
+            <LinearLayout
+                android:id="@+id/info_count_collect_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/my_infomation_head_background_selector"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    style="@style/user_formation_info"
+                    android:text="我的收藏" />
+
+                <TextView
+                    android:id="@+id/info_count_collect"
+                    style="@style/user_formation_text"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@null"></View>
+
+            <LinearLayout
+                android:id="@+id/info_count_history_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/my_infomation_head_background_selector"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    style="@style/user_formation_info"
+                    android:text="浏览记录" />
+
+                <TextView
+                    android:id="@+id/info_count_history"
+                    style="@style/user_formation_text"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@null"></View>
+
+        </LinearLayout>
+
+        <!-- 对原有的积分 收藏  关注  粉丝进行隐藏显示  -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3px"
+            android:background="#18be40"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ly_score"
+                style="@style/uset_information_ll" >
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    style="@style/user_formation_text" />
+
+                <TextView
+                    style="@style/user_formation_info"
+                    android:text="@string/user_score" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_favorite"
+                style="@style/uset_information_ll" >
+
+                <TextView
+                    android:id="@+id/tv_favorite"
+                    style="@style/user_formation_text" />
+
+                <TextView
+                    style="@style/user_formation_info"
+                    android:text="@string/favorite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_following"
+                style="@style/uset_information_ll" >
+
+                <TextView
+                    android:id="@+id/tv_following"
+                    style="@style/user_formation_text" />
+
+                <TextView
+                    style="@style/user_formation_info"
+                    android:text="@string/following" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_follower"
+                style="@style/uset_information_ll" >
+
+                <TextView
+                    android:id="@+id/tv_follower"
+                    style="@style/user_formation_text" />
+
+                <TextView
+                    style="@style/user_formation_info"
+                    android:text="@string/follower" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_user_unlogin"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.lzj.vtm.demo.widget.CircleImageView
+            android:id="@+id/iv_avatar1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/widget_dface"
+            app:border_color="@color/white"
+            app:border_width="3dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_avatar1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="未登录"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</FrameLayout>

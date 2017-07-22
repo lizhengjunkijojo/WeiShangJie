@@ -1,7 +1,8 @@
 package com.lzj.vtm.demo.api;
 
 import com.lzj.vtm.demo.download.Update;
-import com.lzj.vtm.demo.home.model.RetBaseNews;
+import com.lzj.vtm.demo.home.episode.model.RetBaseEpisode;
+import com.lzj.vtm.demo.home.news.model.RetBaseNews;
 import com.lzj.vtm.demo.banner.RetBaseBanner;
 
 import rx.Observable;
@@ -29,5 +30,9 @@ public class ObservableImp<T> extends Observable<T> {
 
     public static Observable<RetBaseBanner> getStartImage() {
         return RetrofitImp.getWsjApi().getStartImage();
+    }
+
+    public static Observable<RetBaseEpisode> getEpisode(int pageNo, int pageSize) {
+        return RetrofitImp.getWsjApi().getEpisode(pageNo,pageSize);
     }
 }

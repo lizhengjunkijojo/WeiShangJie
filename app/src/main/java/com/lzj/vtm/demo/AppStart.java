@@ -18,6 +18,7 @@ import com.lzj.vtm.demo.banner.Banner;
 import com.lzj.vtm.demo.banner.RetBaseBanner;
 import com.lzj.vtm.demo.api.ObservableImp;
 import com.lzj.vtm.demo.api.ObserverImp;
+import com.lzj.vtm.demo.blvs.PolyvMainActivity;
 import com.lzj.vtm.demo.utils.TDevice;
 
 import org.kymjs.kjframe.utils.SystemTool;

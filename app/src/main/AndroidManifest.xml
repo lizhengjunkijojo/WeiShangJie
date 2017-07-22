@@ -19,6 +19,17 @@
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
+    <!-- 基础权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><!-- 属于android6.0运行时权限-->
+    <!-- android.permission.READ_PHONE_STATE是PolyvSDKClient.initCrashReport使用到的权限，如果没有调用此方法，可以去掉该权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/><!-- 属于android6.0运行时权限-->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -94,6 +105,21 @@
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
+
+        <activity
+            android:name="com.lzj.vtm.demo.blvs.PolyvMainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name="com.lzj.vtm.demo.blvs.PolyvOnlineVideoActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name="com.lzj.vtm.demo.blvs.PolyvPlayerActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

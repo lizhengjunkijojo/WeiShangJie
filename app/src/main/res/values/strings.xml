@@ -61,4 +61,23 @@
 
     <string name="tip_double_click_exit">再次点击退出微商界</string>
 
+    <string name="message">消息</string>
+    <string name="team">团队</string>
+    <string name="note">便签</string>
+    <string name="user_score">积分</string>
+    <string name="favorite">收藏</string>
+    <string name="user_feed_back">反馈</string>
+    <string name="business_room">商务</string>
+    <string name="following">关注</string>
+    <string name="follower">粉丝</string>
+    <string name="setting">设置</string>
+    <string name="mark">风标</string>
+    <string name="zhuanti">专题</string>
+
+    <string name="active">好友圈</string>
+    <string name="activities">活动</string>
+    <string name="scan">扫一扫</string>
+    <string name="friends">同城</string>
+    <string name="find_oscer">找人</string>
+    <string name="shake">摇一摇</string>
 </resources>

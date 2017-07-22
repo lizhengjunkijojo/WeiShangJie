@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.lzj.vtm.demo.R;
-import com.lzj.vtm.demo.home.Home2Fragment;
+import com.lzj.vtm.demo.home.news.Home2Fragment;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
